@@ -2,8 +2,10 @@
 
 #This is a Work In Progress
 
+#Bash script Image Watcher
+
 ###########
-# Title: PymageWatch.sh
+# Title: biw.sh
 # Descripton: A linux shell script that monitors a folder for new images and displays them as they are added.
 # Author: Jonathan N. Winters, Jonathan@Winters.im
 # Date:   July 19, 2017
