@@ -4,7 +4,7 @@
 ############################################################################
 # Title: ShImageWatch.sh                                                   
 #                                                                          
-# Descripton: A linux shell script that monitors a folder for new images   
+# Description: A linux shell script that monitors a folder for new images   
 # and displays them as they are added.                                     
 #                                                               
 # Author: Jonathan N. Winters, jnw25@cornell.edu                           
