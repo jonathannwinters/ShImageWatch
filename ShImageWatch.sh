@@ -26,7 +26,7 @@ expected_image_type=".TYPE" #replace the string .TYPE value with .jpg, .gif, or 
 
 path_to_this_app="/REPLACE/WITH/FULL/PATH/TO/THIS/APP/DIRECTORY/"
 path_to_new_images="/REPLACE/WITH/FULL/PATH/TO/LOCATION/OF/INCOMING/IMAGES/"
-path_to_past_images="/REPLACE/WITH/FULL/PATH/TO/SPLASH/IMAGE/FILE/"
+path_to_past_images="/REPLACE/WITH/FULL/PATH/TO/DESTINATION/DIRECTORY/FOR/PAST/IMAGES"
 
 
 # sets the path to splash based on the location of this folder
@@ -46,9 +46,8 @@ inotifywait -m $path_to_new_images -e create -e moved_to |
     while read path action file; do
         cp -f $path$file ${path_to_past_images}${file}
         mv -f $path$file $path_to_current_image
-        #echo $path$file $path_to_current_image
+        timestamp=`date "+%Y-%m-%d %H:%M:%S"`
+        echo "$timestamp  $file"
     done
-
-
 
 
