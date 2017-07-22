@@ -18,9 +18,6 @@
 #     $sudo apt-get install imagemagick
 ############################################################################
 
-
-#resources http://www.imagemagick.org/Usage/anim_basics/
-
 # set your parameters
 expected_image_type=".TYPE" #replace the string .TYPE value with .jpg, .gif, or .png
 
@@ -49,5 +46,7 @@ inotifywait -m $path_to_new_images -e create -e moved_to |
         timestamp=`date "+%Y-%m-%d %H:%M:%S"`
         echo "$timestamp  $file"
     done
+
+
 
 
